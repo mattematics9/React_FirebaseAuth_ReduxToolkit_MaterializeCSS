@@ -1,0 +1,106 @@
+/* Nav */
+
+.nav-wrapper{
+    background-color:rgb(38, 0, 39);
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-wrapper a{
+    color: rgb(255, 166, 0);
+}
+
+.nav-link-dropdown a:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.sidenav{
+    background-color: rgb(228, 228, 228);
+}
+
+.active-nav-link{
+    background-color: rgb(53, 0, 55);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-left-color: orange;
+    border-right-color: orange;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+.active-mobile-nav-link{
+    background-color: rgb(196, 196, 196);
+    border-left-color: orange;
+    border-right-color: orange;
+    border-right-style: solid;
+    border-left-style: solid;
+}
+
+/* Buttons */
+
+.btn-large,
+.btn-large:focus{
+    background-color: rgb(59, 0, 61);
+}
+
+.btn-large:hover{
+    background-color:rgb(79, 0, 82)
+}
+
+.idp-login-btn,
+.idp-login-btn:focus{
+    background-color: rgb(244, 244, 244);
+    width: 230px;
+    padding: 10px;
+    font-size: 25px;
+    color: rgb(0, 0, 40);
+}
+
+.idp-login-btn:hover{
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
+}
+
+/* Login */
+
+input:focus{
+    border-bottom: 1px solid rgb(38, 0, 39) !important;
+    box-shadow: 0 1px 0 0 white !important;
+}
+
+label.active {
+    color: rgb(130, 45, 130) !important;
+}
+
+.prefix {
+    color: rgb(130, 45, 130);
+}
+
+.input-field .prefix.active {
+    color: rgb(130, 45, 130);
+}
+
+
+.idp-login-btn-row{
+    padding-top: 100px;
+}
+
+#edit-email-btn,
+#edit-email-sign-out-btn{
+    background-color: rgb(243, 243, 243);
+    color: rgb(130, 45, 130);
+    border: 1px solid rgb(130, 45, 130);
+   
+}
+
+#edit-email-btn:hover,
+#edit-email-sign-out-btn:hover{
+    background-color: rgb(249, 249, 249);
+}
+
+
+@media only screen and (max-width: 900px){
+    .idp-login-btn-row{
+        padding-top:20px;
+    }
+}
