@@ -18,7 +18,9 @@ Settings (src/components/Settings) for when a user is logged in.
 ## Steps:
 
 1) Clone the repo: git clone https://github.com/mattematics9/React_FirebaseAuth_ReduxToolkit_MaterializeCSS.git NameOfProject
+
 2) Create project in the firebase console.  
+
 3) Firebase Configuration:
 
   Create a .env.local file and input all firebase configuration values from the firebase console (located in the project settings):
@@ -45,15 +47,18 @@ Settings (src/components/Settings) for when a user is logged in.
       };
 
 4) Enter 'npm install' in terminal to download project dependencies.  
+
 5) Enter 'firebase init' in terminal.  Setup Firestore, Hosting, Storage, and Emulators.  
 
-6) Edit the main configuration file:
+6) Edit the main configuration file: src/mainConfig.js
 
-  src/mainConfig.js
-
-  - const appName = 'Enter name of your app'.  
-  - const mode = either 'development' or 'production'.  mode = 'development' will make the host http://localhost:3000 and connect the firebase emulators.  switch to mode = 'production' right before deployment.  This will make sure the firebase domain is used and not the local host, and the emulators will not be connected.  
-  - const port = 'whatever port you want to use for local development'.  It's set at 3000.  You can switch to 5000 for the firebase hosting emulator.  You can ignore this if mode = 'production'
+      const appName = 'Enter name of your app'.  
+      
+      const mode = either 'development' or 'production'.  
+          mode = 'development' will make the host http://localhost:3000 and connect the firebase emulators.
+          mode = 'production' will make sure the firebase domain is used and not the local host, and the emulators will not be connected.  
+      
+      const port = 'whatever port you want to use for local development'.  It's set at 3000.  You can switch to 5000 for the firebase hosting emulator.             You can ignore this if mode = 'production'
 
 7) Either enable Apple Sign In by joining the Apple Developer Program (annual fee of $99) and then following https://firebase.google.com/docs/auth/web/apple, or delete the Apple Sign In button (located at src/components/auth/AppleLogin.js).
 
